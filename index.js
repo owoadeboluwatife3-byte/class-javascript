@@ -86,8 +86,16 @@ console.log(encryptnum('08080468240'))
 //write an function that will log each element in the array to the console 
 
 const fruits = ["Apple", "mango", "orange", "kiwi"]
+//first approach
+// for(i = 0; i < fruits.length; i++){
+//     console.log(fruits[i]);
+// }
+//second 
+// for(fruit of fruits){
+//     console.log(fruit)
+// }
+//third
 
-for(i = 0; i <= fruits.length; i++){
-    console.log(fruits[i]);
-}
+fruits.forEach((fruits) => console.log(fruits))
 
+//assignment create a counter app
