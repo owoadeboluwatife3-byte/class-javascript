@@ -99,3 +99,38 @@ const fruits = ["Apple", "mango", "orange", "kiwi"]
 fruits.forEach((fruits) => console.log(fruits))
 
 //assignment create a counter app
+//revision on function
+
+function nameinitial(name){
+    const names = name.split(' ')
+    return names[0].charAt(0).toUpperCase() + names[1].charAt(0).toUpperCase()
+
+}
+
+console.log(nameinitial('adams owoade'))
+
+const namess = nameinitial('adams pete')
+console.log(namess)
+
+//javascript dom
+document.body.style.backgroundColor = 'grey'
+
+const heading = document.getElementById('heading')
+
+// heading.innerText = 'welcome to lildamz page'
+//innertext is used to replace words 
+const redbg = document.getElementById('redbg')
+const greenbg = document.getElementById('greenbg')
+const changeTxt = document.getElementById('changeTxt')
+
+redbg.addEventListener('click', ()=>{
+    document.body.style.backgroundColor = 'red'
+})
+
+greenbg.addEventListener('click', ()=>{
+    document.body.style.backgroundColor = 'green'
+})
+
+changeTxt.addEventListener('click', ()=>{
+    heading.innerText = 'welcome back to coding'
+})
