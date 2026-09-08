@@ -136,3 +136,33 @@ changeTxt.addEventListener('click', ()=>{
 })
 
 //create an input and then a button, whatever you put inside the input should become a background based on whaever you type inside your input
+
+//correction to the assignment
+
+const colorinput = document.getElementById('colorinput')
+const changebg = document.getElementById('changebg')
+const resetbg = document.getElementById('resetbg')
+const createdcont = document.getElementById('createdcont')
+
+changebg.addEventListener('click', ()=>{
+    const bg = colorinput.value
+    document.body.style.backgroundColor = bg
+    colorinput.value = ' '
+})
+
+resetbg.addEventListener('click',()=>{
+    document.body.style.backgroundColor = 'white'
+})
+
+const ayoola = document.createElement('div')
+ayoola.style.height = '40vh';
+ayoola.style.width = '50%';
+ayoola.style.backgroundColor = 'green'
+ayoola.style.color = 'white'
+
+createdcont.append(ayoola)
+
+const paragraph = document.createElement('p')
+paragraph.innerText = "hello i'm learning dom may God help me"
+
+ayoola.append(paragraph)
