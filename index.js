@@ -134,3 +134,5 @@ greenbg.addEventListener('click', ()=>{
 changeTxt.addEventListener('click', ()=>{
     heading.innerText = 'welcome back to coding'
 })
+
+//create an input and then a button, whatever you put inside the input should become a background based on whaever you type inside your input
