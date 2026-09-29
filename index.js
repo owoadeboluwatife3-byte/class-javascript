@@ -166,3 +166,5 @@ const paragraph = document.createElement('p')
 paragraph.innerText = "hello i'm learning dom may God help me"
 
 ayoola.append(paragraph)
+
+//build a simple calculator with javascript
